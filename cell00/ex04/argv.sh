@@ -1,4 +1,9 @@
-#!/bin/bash
-echo "$1"
-echo "$2"
-echo "$3"
+if [ $# -eq 0 ]
+then
+	echo "No arguments supplied"
+else
+	for arg in "$@"
+	do
+		echo "$arg"
+	done
+fi
