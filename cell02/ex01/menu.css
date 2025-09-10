@@ -1,0 +1,47 @@
+.wrapper {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: aqua;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-label {
+  background-color: #1706ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.menu-content p:hover {
+  cursor: pointer;
+  background-color: rgb(105, 141, 172);
+}
+
+.menu:hover .menu-content {
+  display: block;
+}
+
+.menu:hover .menu-label {
+  background-color: rgb(0, 204, 255);
+}
