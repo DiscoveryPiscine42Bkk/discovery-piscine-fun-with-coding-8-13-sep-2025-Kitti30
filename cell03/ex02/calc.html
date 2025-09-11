@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+    <had>
+        <meta charset="utf-8" />
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <style>
+          input[type="text"], select { padding:8px; font-size:16px; margin-right:8px; }
+          #submit_button { padding:8px 12px; font-size:16px; }
+      #input1, #input2 { width:120px; }
+    </style>
+    </had>
+    <body>
+      <div>
+        <input type="text" id="input1" placeholder="Left (>=0)">
+        <select id="operation">
+          <option value="addition">+</option>
+          <option value="deletion">-</option>
+          <option value="multiplication">*</option>
+          <option value="divide">/</option>
+          <option value="modulation">%</option>
+        </select>
+        <input type="text" id="input2" placeholder="Right (>=0)">
+        <input type="button" id="submit_button" value="Try me!">
+      </div>
+    
+    <script>
+      const clear_func = () => {
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+      };
+    
+      const isPositiveIntegerString = s => /^[0-9]+$/.test(s);
+    
+      const show_answer = () => {
+        const s1 = document.getElementById("input1").value.trim();
+        const s2 = document.getElementById("input2").value.trim();
+        const op = document.getElementById("operation").value;
+    
+        if (!isPositiveIntegerString(s1) || !isPositiveIntegerString(s2)) {
+          alert("Error :(");
+          console.log("Error :(");
+          clear_func();
+          return;
+        }
+    
+        const a = parseInt(s1, 10);
+        const b = parseInt(s2, 10);
+    
+        if ((op === "divide" || op === "modulation") && b === 0) {
+          alert("It's over 9000!");
+          console.log("It's over 9000!");
+          clear_func();
+          return;
+        }
+    
+        let result;
+        switch (op) {
+          case "addition": result = a + b; break;
+          case "deletion": result = a - b; break;
+          case "multiplication": result = a * b; break;
+          case "divide": result = a / b; break;
+          case "modulation": result = a % b; break;
+          default:
+            alert("Error :(");
+            console.log("Error :(");
+            clear_func();
+            return;
+        }
+    
+        alert(result);
+        console.log(result);
+        clear_func();
+      };
+    
+      document.getElementById("submit_button").addEventListener("click", show_answer);
+    
+      setInterval(() => { alert("Please, use me..."); }, 30000);
+    </script>
+    </body>
+</html
