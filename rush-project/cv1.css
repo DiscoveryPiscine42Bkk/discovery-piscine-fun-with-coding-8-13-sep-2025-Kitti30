@@ -1,0 +1,68 @@
+body {
+    scroll-behavior: smooth;
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+#skills{
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+.skill-box .content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.skill-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+#docucer {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#skl {
+    font-size: 24px;
+}
+
+#skl2 {
+    font-size: 24px;
+}
+
+#skills h2 {
+    margin-top: 40px;
+}
+
+#contact h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#contact img {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+}
+
+#contact h2 {
+    font-size: 80px;
+}
+
+#contact p {
+    font-size: 50px;
+}

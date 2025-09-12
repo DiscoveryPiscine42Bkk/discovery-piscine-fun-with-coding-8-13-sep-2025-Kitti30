@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #5a5a5a;
+}
+
+h1 {
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00285c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+#me{
+    margin-top: 5%;
+    width: 300px;
+    border-radius: 200px;
+}
+
+div.text{
+    color: rgb(219, 219, 219);
+}
+
+#skill {
+    margin-top: 10%;
+    display: inline-block;
+}
+
+#skill img{
+    margin-left: 5%;
+    width: 500px;
+}
+
+#skill div.text {
+    margin-top: 0;
+    margin-left: 50px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#skill div.certi{
+    display: flex;
+}
+
+#contact {
+    background-color: #00285c;
+    height: 100px;
+}
+
+#contact img{
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: bottom;
+    filter: grayscale(100%);
+    transition: filter 0.2s;
+}
+
+#contact a{
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+  align-content: center;
+}
